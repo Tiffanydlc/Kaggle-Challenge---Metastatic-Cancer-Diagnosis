@@ -14,8 +14,6 @@
   * Type: Tabular CSV file with mixed numeric and categorical columns. Each row represents a patient.
     * Input: Patient demographics, ZIP-level socioeconomic indicators, diagnostic codes, insurance status, and more
     * Output: Binary label indicating diagnosis within 90 days ("DiagPeriodL90D").
-  * Size: Train: 12,906 records
-  * Instances (Train, Test, Validation Split): how many data points? Ex: 1000 patients for training, 200 for testing, none for validation
 
 #### Preprocessing / Clean up
 
@@ -87,8 +85,7 @@
   * Under Summary there is a button that will automatically download the files
 
 ### Training
-  * Perform a stratified 70/15/15 split on the preprocessed datase
+  * Perform a stratified 70/15/15 split on the preprocessed dataset
 
 #### Performance Evaluation
   * Metrics: ROC-AUC, Precision, Recall, F1
-  * Evaluation scripts provided in notebook.
