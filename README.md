@@ -25,9 +25,9 @@
 * Handled class imbalance using SMOTE 
 
 #### Data Visualization
-
-Show a few visualization of the data and say a few words about what you see.
-
+![Target Variable]( Uknown-25.png)
+ * Unbalance with more (1)
+![Correlation Map]( Uknown-24.png)
 ### Problem Formulation
 
 * Define:
@@ -48,7 +48,10 @@ Show a few visualization of the data and say a few words about what you see.
   * Any difficulties? How did you resolve them?
 
 ### Performance Comparison
-  
+  ### ROC Curve Comparison
+
+![ROC Curve]( Uknown-23.png)
+
 
 ### Conclusions
 
