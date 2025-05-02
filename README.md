@@ -27,7 +27,6 @@
 #### Data Visualization
 ![Target Variable](Unknown-25.png)
  * The target variable isnt balanced so we had an imbalance issue in order to fix that I used SMOTE
-![Correlation Map](Unknown-24.png)
 
 ### Problem Formulation
 
