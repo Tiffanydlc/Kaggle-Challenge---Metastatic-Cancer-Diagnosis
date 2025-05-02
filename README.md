@@ -5,7 +5,7 @@
 ## Overview
   * **Definition of the tasks / challenge**  The goal is to assess whether the likelihood of the patient’s Diagnosis Period being less than 90 days is predictable using these characteristics and information about the patient
   * **Your approach** We formulated this as a binary classification task using models like Random Forest, Decision Tree, and XGBoost. We evaluated model performance based on ROC-AUC and F1-score, while handling class imbalance using SMOTE 
-  * **Summary of the performance achieved** The XGBoost achieved the best performance with an ROC-AUC of approximately 0.58 on validation data. The Random Forest model also performed well, followed by the Decision Tree classifier.
+  * **Summary of the performance achieved** The XGBoost achieved the best performance with an ROC-AUC of approximately 0.58 on validation data. The Random Forest model also performed well 0.55, followed by the Decision Tree classifier 0.52.
 
 ## Summary of Workdone
 ### Data
@@ -14,8 +14,8 @@
   * Type: Tabular CSV file with mixed numeric and categorical columns. Each row represents a patient.
     * Input: Patient demographics, ZIP-level socioeconomic indicators, diagnostic codes, insurance status, and more
     * Output: Binary label indicating diagnosis within 90 days ("DiagPeriodL90D").
-    * training.csv: ~15,000 samples with 35 features
-    * test.csv: ~5,000 samples with similar structure (without labels)
+    * training.csv: 12906 rows with 35 features
+    * test.csv: 5792 rows and 32 features
       
 #### Preprocessing / Clean up
 
@@ -26,18 +26,18 @@
 
 #### Data Visualization
 ![Target Variable](Unknown-25.png)
- * Unbalance with more (1)
+ * The target variable isnt balanced so we had an imbalance issue in order to fix that I used SMOTE
 ![Correlation Map](Unknown-24.png)
+
 ### Problem Formulation
 
 * Define:
   * Input: Tabular features per patient
   * Output: Binary label (0 = no diagnosis within 90 days, 1 = diagnosis)
   * Models:
-    * Random Forest (baseline, robust to noise)
-    * Decision Tree (simple and interpretable)
-    * XGBoost (optimized gradient boosting)
-  * Loss:Binary Cross-Entropy (logloss)
+    * Random Forest
+    * Decision Tree 
+    * XGBoost 
   * Metrics: ROC-AUC, F1-score, Precision, Recall
 
 ### Training
