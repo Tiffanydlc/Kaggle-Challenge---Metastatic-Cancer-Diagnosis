@@ -14,7 +14,9 @@
   * Type: Tabular CSV file with mixed numeric and categorical columns. Each row represents a patient.
     * Input: Patient demographics, ZIP-level socioeconomic indicators, diagnostic codes, insurance status, and more
     * Output: Binary label indicating diagnosis within 90 days ("DiagPeriodL90D").
-
+    * training.csv: ~15,000 samples with 35 features
+    * test.csv: ~5,000 samples with similar structure (without labels)
+      
 #### Preprocessing / Clean up
 
 * Dropped high-missing and leakage-prone columns such as diagnosis descriptions, treatment codes, and patient IDs.
@@ -23,9 +25,9 @@
 * Handled class imbalance using SMOTE 
 
 #### Data Visualization
-![Target Variable]( Uknown-25.png)
+![Target Variable](Unknown-25.png)
  * Unbalance with more (1)
-![Correlation Map]( Uknown-24.png)
+![Correlation Map](Unknown-24.png)
 ### Problem Formulation
 
 * Define:
@@ -48,7 +50,7 @@
 ### Performance Comparison
   ### ROC Curve Comparison
 
-![ROC Curve]( Uknown-23.png)
+![ROC Curve](Uknown-23.png)
 
 
 ### Conclusions
@@ -67,13 +69,6 @@
   * Load training.csv, preprocess, and train using the Kaggle_Challenge-3.ipynb notebook.
   * Run models and evaluate using included code blocks.
   * Use submission_example.csv as a template for creating test set predictions
-
-### Overview of files in repository
-
-  * Kaggle_Challenge.ipynb: Full training and evaluation pipeline.
-  * training.csv: Main training dataset.
-  * submission_example.csv: Format reference for submission file.
-  * README.md: Overview of Project
 
 ### Software Setup
   * Python 3.11
